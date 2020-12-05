@@ -1,0 +1,35 @@
+.footer
+  background-color: #0E1923
+  &__inner
+    padding: 30px 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-social
+    display: flex
+    align-items: center
+    &__link
+      margin-right: 10px
+      &:last-child
+        margin-right: 0
+  &-info
+    font-size: 1.6rem
+    color: var(--secondary)
+    &__copy, &__privacy
+      margin-bottom: 5px
+      display: block
+    &__privacy
+      text-decoration: underline
+
+@media ( max-width: 768px )
+  .footer
+    &__inner
+      flex-direction: column
+    .logo__link
+      margin-bottom: 30px
+    &-social
+      margin-bottom: 30px
+    &-info
+      font-size: 1.2rem
+      text-align: center
+  

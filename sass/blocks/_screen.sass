@@ -1,0 +1,359 @@
+.screen
+  position: relative
+  &__wrapper
+    position: relative
+    padding: 30px 0
+    background: radial-gradient(circle, rgba(20,31,42,1) 0%, rgba(6,16,25,1) 100%)
+  &__backword
+    position: relative
+    z-index: 2
+    top: 0
+    left: 0
+    font-family: 'Times New Roman, serif'
+    font-size: 20rem
+    letter-spacing: 10px
+    text-transform: uppercase
+    color: #141e2a
+    cursor: default
+  &__title
+    margin: 0
+    margin-bottom: 10px
+    max-width: 520px
+    +mont-bold
+    font-size: 4.4rem
+    color: var(--secondary)
+  &__subtitle
+    margin-bottom: 50px
+    display: inline-block
+    max-width: 510px
+    font-size: 2.2rem
+    letter-spacing: 3px
+    color: var(--secondary)
+  &__round
+    position: absolute
+    z-index: 3
+    top: -150px
+    right: 100px
+  &__laptop
+    position: absolute
+    top: calc(50% - 300px)
+    right: 100px
+    z-index: 4
+    width: 700px
+  &-features
+    margin: 50px auto 30px
+    max-width: 975px
+    &__inner
+      display: flex
+    &-part
+      width: 24%
+      padding-right: 20px
+      padding-left: 20px
+      display: flex
+      flex-direction: column
+      border-left: 1px solid #2f3f4e
+      &:last-child
+        border-right: 1px solid #2f3f4e
+      &__star
+        margin-bottom: 20px
+      &__text
+        color: #97a4b2
+  &-footer
+    padding-right: 40px
+    display: flex
+    justify-content: flex-end
+
+    &__link
+      position: relative
+      z-index: 11
+      margin-right: 50px
+      font-size: 1.4rem
+      color: var(--secondary)
+      &:last-child
+        margin-right: 0
+
+    &__link
+      transition: all .3s ease
+
+    &__link:hover
+      filter: drop-shadow(0px 0px 5px #fff)
+      transition: all .3s ease
+
+  &__scroll
+    position: absolute
+    bottom: -130px
+    left: 50%
+    transform: translateX(-32px)
+
+.header
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-right: 30px
+  padding-left: 30px
+
+.logo
+  &__screen
+    margin-bottom: 10px
+
+.burger
+  position: relative
+  z-index: 11
+  width: 35px
+  height: 40px
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  justify-content: center
+  cursor: pointer
+  &__line1
+    margin-bottom: 6px
+    width: 100%
+    height: 5px
+    border-radius: 3px
+    background-color: #9ea2a6
+    transition: 0.3s
+  &__line2
+    width: 50%
+    height: 5px
+    border-radius: 3px
+    background-color: #9ea2a6
+    transition: 0.3s
+  &:hover
+    .burger__line1, .burger__line2
+      background-color: var(--secondary)
+
+.menu
+  position: absolute
+  top: 0
+  right: 0
+  width: 0px
+  height: 100%
+  z-index: 10
+  background-color: rgba(#0f161e, 0.9)
+  transition: 0.3s
+  &__inner
+    display: flex
+    height: 100%
+
+  &__inner a
+    transition: all .3s ease
+
+  &__inner a:hover
+    filter: drop-shadow(0px 0px 5px #fff)
+    transition: all .3s ease
+
+  &__close
+    width: 70px
+    background: transparent url(../img/arrow-right.png) no-repeat
+    background-position: center
+    cursor: pointer
+    transition: all 0.3s
+    &:hover
+      background-color: rgba(#0f161e, 0.8)
+  &-content
+    height: 100%
+    flex-grow: 1
+    padding-left: 10px
+    &__inner
+      height: 100%
+    &-part
+      padding-top: 40px
+    &__title
+      margin: 0
+      margin-bottom: 30px
+      font-size: 2.2rem
+      font-weight: bold
+      color: #4e535a
+  &-list
+    &__inner
+      margin: 0
+      padding: 0
+      list-style: none
+      font-size: 1.8rem
+      color: var(--secondary)
+    &__item
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+
+
+@media ( max-width: 1400px )
+  .screen
+    &__backword
+      font-size: 12rem
+    &__title
+      font-size: 4rem
+    &__subtitle
+      margin-bottom: 70px
+      font-size: 2rem
+    &__round
+      right: 60px
+      width: 610px
+    &__laptop
+      width: 620px
+    &__round
+      top: -120px
+    &-features
+      font-size: 1.4rem
+      &-part
+        &__star
+          margin-bottom: 10px
+    &__btn
+      width: 180px
+      font-size: 1.4rem
+  
+  .logo
+    &__img
+      &_big
+        display: none
+
+  .menu
+    &-content
+      &__title
+        font-size: 2rem
+    &-list
+      &__inner
+        font-size: 1.4rem
+      &__item
+        margin-bottom: 25px
+
+@media ( max-width: 1200px )
+  .screen
+    &__title
+      max-width: 440px
+      font-size: 3.5rem
+    &__subtitle
+      margin-bottom: 85px
+      font-size: 1.8rem
+    &__laptop
+      top: 100px
+      right: 50px
+      width: 500px
+    &__round
+      top: -70px
+      right: 0
+      width: 530px
+    &-features
+      &-part
+        padding-right: 10px
+        padding-left: 10px
+
+@media ( max-width: 991px )
+  .screen
+    margin-top: 50px
+    &__backword
+      display: none
+    &__title
+      font-size: 3rem
+    &__subtitle
+      margin-bottom: 50px
+      max-width: 380px
+      font-size: 1.6rem
+    &__btn
+      width: 160px
+      height: 45px
+    &__laptop
+      top: 160px
+      right: 0
+      width: 400px
+    &__round
+      top: 10px
+      right: 30px
+      width: 360px
+    &-features
+      margin-top: 120px
+      &__inner
+        flex-wrap: wrap
+        justify-content: space-around
+      &-part
+        margin-bottom: 20px
+        width: 40%
+        flex-direction: row
+        border-left: none
+        &:last-child
+          border-right: none
+        &__star
+          margin-right: 10px
+          margin-bottom: 0
+        &__text
+          margin: 0
+          line-height: 21px
+    &__scroll
+      display: none
+
+@media ( max-width: 768px )
+  .screen
+    &__wrapper
+      overflow-x: hidden
+    &__title, &__subtitle
+      position: relative
+      z-index: 2
+    &__title
+      max-width: 370px
+      font-size: 2.5rem
+    &__subtitle
+      margin-bottom: 40px
+      max-width: 320px
+      font-size: 1.4rem
+    &__laptop
+      top: 95px
+      right: -85px
+      width: 75%
+    &__round
+      top: 30px
+      right: -85px
+      width: 300px
+      z-index: 1
+    &-features
+      margin-top: 90px
+      font-size: 1.2rem
+      z-index: 5
+      position: relative
+      &__inner
+        justify-content: space-between
+      &-part
+        width: 50%
+    &-footer
+      &__link
+        margin-right: 30px
+        font-size: 1.2rem
+
+@media ( max-width: 520px )
+  .screen
+    &__title
+      max-width: 280px
+      font-size: 2.2rem
+    &__subtitle
+      max-width: 200px
+      font-size: 1.2rem
+    &__btn
+      width: 140px
+      height: 40px
+    &__laptop
+      top: 140px
+      right: -60px
+    &__round
+      top: 45px
+      right: -100px
+      width: 270px
+    &-features
+      margin-top: 50px
+      &-part
+        width: 100%
+  
+  .menu
+    &__close
+      width: 50px
+
+@media ( max-width: 425px )
+  .screen
+    &__laptop
+      top: 175px
+      width: 85%
+    &__round
+      top: 100px
+      right: -135px
+      width: 250px
+  

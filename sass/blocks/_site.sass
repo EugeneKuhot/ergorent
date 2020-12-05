@@ -1,0 +1,128 @@
+.site
+  background: radial-gradient(circle, rgba(20,31,42,1) 0%, rgba(6,16,25,1) 100%)
+  .container
+    position: relative
+  &__round
+    position: absolute
+    top: -240px
+    left: -170px
+    z-index: 3
+  &__desktop
+    position: relative
+    z-index: 4
+  &-inner
+    display: flex
+    justify-content: space-between
+    &__right
+      padding-left: 20px
+  &__title
+    margin: 0
+    margin-bottom: 70px
+    max-width: 400px
+    color: var(--secondary)
+  &-paragraph
+    margin: 0
+    margin-bottom: 20px
+    font-size: 1.8rem
+    line-height: 23px
+    color: var(--secondary)
+  &-list
+    margin: 20px 0
+    padding: 0
+    list-style: none
+    font-size: 1.8rem
+    color: var(--secondary)
+    &__item
+      margin-bottom: 10px
+      &::before
+       content: '- ' 
+
+
+@media ( max-width: 1400px )
+  .site
+    &__round
+      top: -120px
+      left: -110px
+      width: 550px
+    &-inner
+      &__left
+        display: flex
+        align-items: center
+    &__desktop
+      width: 400px
+    &__title
+      font-size: 4rem
+    &-paragraph, &-list
+      font-size: 1.6rem
+
+@media ( max-width: 1200px )
+  .site
+    &__round
+      top: -80px
+      left: auto
+      right: 10px
+      width: 450px
+    &__desktop
+      width: 350px
+    &-inner
+      &__right
+        width: 50%
+        order: 1
+      &__left
+        width: 50%
+        justify-content: flex-end
+        order: 2
+    &__title
+      margin-bottom: 40px
+    &-paragraph, &-list
+      font-size: 1.4rem
+
+@media ( max-width: 991px )
+  .site
+    &__round
+      top: -30px
+      width: 400px
+    &__desktop
+      width: 270px
+    &-inner
+      &__right
+        width: 60%
+      &__left
+        width: auto
+  
+
+@media ( max-width: 768px )
+  .site
+    &__round
+      top: auto
+      right: 60%
+      transform: translateX(50%)
+      bottom: -20px
+    &__title
+      font-size: 3rem
+    &-inner
+      flex-wrap: wrap
+      &__right, &__left 
+        width: 100%
+      &__right
+        margin-bottom: 80px
+      &__left
+        justify-content: center
+
+@media ( max-width: 520px )
+  .site
+    &__title
+      font-size: 2rem 
+    &-paragraph, &-list
+      font-size: 1.2rem
+    &__round
+      right: 40%
+      bottom: 10px
+      width: 250px
+    &__desktop
+      width: 210px
+  
+  
+  
+    
+  

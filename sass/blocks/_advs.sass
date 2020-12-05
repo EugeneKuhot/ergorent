@@ -1,0 +1,113 @@
+.advs
+  margin-bottom: 40px
+  background-color: var(--secondary)
+  &-header
+    margin: 40px 0 40px
+    display: flex
+    align-items: center
+    &__text
+      max-width: 520px
+      font-size: 1.8rem
+      color: var(--text-primary)
+  &__title
+    margin: 0
+    max-width: 440px
+    color: var(--text-primary)
+  &-body
+    &__inner
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+  &-item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &__wrapper
+      margin-bottom: 40px
+      width: 30%
+    &-icon
+      margin-bottom: 20px
+      text-align: center
+    &-text
+      margin: 0 auto
+      width: 90%
+      text-align: center
+      font-size: 1.8rem
+      color: var(--text-primary)
+
+
+@media ( max-width: 1200px )
+  .advs
+    &-header
+      justify-content: space-between
+      &__text
+        margin-left: 40px
+        text-align: right
+        max-width: 400px
+        font-size: 1.6rem
+    &__title
+      font-size: 4rem
+    &-item
+      &-text
+        font-size: 1.6rem
+
+@media ( max-width: 991px )
+  .advs
+    padding-top: 30px
+    &-header
+      margin-top: 0
+      &__text
+        font-size: 1.4rem
+    &-item
+      &-icon
+        &__img
+          width: 60px
+      &-text
+        font-size: 1.4rem
+
+@media ( max-width: 768px )
+  .advs
+    &-header
+      flex-wrap: wrap
+      &__text
+        margin: 0 auto
+        text-align: center
+    &__title
+      margin-bottom: 40px
+      max-width: 100%
+      font-size: 3rem
+    &-item
+      &__wrapper
+        width: 50%
+      &-icon
+        margin-bottom: 0
+        height: 78px
+        &__img
+          width: 50px
+      &-text
+        width: 80%
+
+@media ( max-width: 520px )
+  .advs
+    &-header
+      &__text
+        max-width: 80%
+        font-size: 1rem
+        line-height: 18px
+    &__title
+      font-size: 2rem
+    &-item
+      &-icon
+        margin-bottom: 5px
+        height: 53px
+        &__img
+          width: 40px
+      &-text
+        width: 85%
+        font-size: 1rem
+        line-height: 20px
+  
+  
+  
+  
+  

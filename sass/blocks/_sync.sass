@@ -1,0 +1,122 @@
+.sync
+  background: radial-gradient(circle, rgba(20,31,42,1) 0%, rgba(6,16,25,1) 100%)
+  .container
+    position: relative
+  &__title
+    margin: 0
+    margin-bottom: 30px
+    color: var(--secondary)
+  &-text
+    margin: 0
+    max-width: 500px
+    color: var(--secondary)
+  &__round
+    position: absolute
+    top: -200px
+    right: 10%
+    z-index: 3
+    width: 600px
+  &__tablet
+    position: absolute
+    top: -100px
+    right: 50px
+    z-index: 4
+    width: 600px
+    &_png
+      display: none
+
+.tabFadeIn
+  animation: tabFadeIn 1s ease 0s 1 normal forwards
+
+@keyframes tabFadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@media ( max-width: 1400px )
+  .sync
+    &__title
+      font-size: 4rem
+    &-text
+      max-width: 420px
+    &__tablet
+      top: -50px
+      right: 5%
+      width: 500px
+  
+@media ( max-width: 1200px )
+  .sync
+    &-text
+      max-width: 40%
+    &__tablet
+    &__round
+      top: -143px
+      width: 500px
+
+@media ( max-width: 991px )
+  .sync
+    &-text
+      max-width: 50%
+    &__round
+      top: -100px
+      right: 0
+      width: 400px
+    &__tablet
+      top: -20px
+      right: 0
+      width: 400px
+
+@media ( max-width: 768px )
+  .sync
+    position: relative
+    .container
+      position: static
+    &__title
+      font-size: 3rem
+    &-text
+      position: relative
+      margin-bottom: 250px
+      max-width: 80%
+      font-size: 1.4rem
+      line-height: 25px
+      z-index: 5
+    &__round
+      top: auto
+      bottom: 15px
+      left: 50%
+      transform: translateX(-50%)
+      right: auto
+      width: 300px
+    &__tablet
+      top: auto
+      bottom: 50px
+      right: auto
+      left: 50%
+      transform: translateX(-50%)
+      width: 350px
+      &_gif
+        display: none
+      &_png
+        display: block
+
+@media ( max-width: 520px )
+  .sync
+    &__title
+      font-size: 2rem
+    &-text
+      font-size: 1.2rem
+    &__round
+      width: 60%
+    &__tablet
+      width: 70%
+  
+@media ( max-width: 425px )
+  .sync
+    &__round
+      width: 80%
+    &__tablet
+      width: 90%
+  
+  
+  

@@ -1,0 +1,100 @@
+.bot
+  padding-bottom: 0
+  background-color: var(--secondary)
+  background-size: contain
+  background-position: right -75px
+  &__title
+    margin: 0
+    margin-bottom: 40px
+    color: var(--text-primary)
+  &-inner
+    display: flex
+    justify-content: space-between
+    &__left
+      margin-bottom: 30px
+      width: 50%
+    &__right
+      display: flex
+      align-items: flex-end
+  &-paragraph
+    font-size: 1.8rem
+    text-align: justify
+    line-height: 23px
+    color: var(--text-primary)
+  &__btn
+    margin-top: 40px
+  &__robot
+    width: 430px
+
+
+@media ( max-width: 1400px )
+  .bot
+    &__title
+      font-size: 4rem
+    &-inner
+      &__left
+        margin-bottom: 30px
+    &-paragraph
+      font-size: 1.6rem
+    &__robot
+      width: 420px
+
+@media ( max-width: 1200px )
+  .bot
+    padding-top: 30px
+    &__robot
+      width: 350px
+
+@media ( max-width: 991px )
+  .bot
+    &-inner
+      &__left
+        width: 60%
+    &-paragraph
+      font-size: 1.4rem
+    &__robot
+      width: 300px
+
+@media ( max-width: 768px )
+  .bot
+    position: relative
+    &__title
+      margin-bottom: 25px
+      font-size: 3rem
+    &__robot
+      position: absolute
+      bottom: 0
+      right: 0
+      width: 250px
+    &-inner
+      flex-wrap: wrap
+      &__left
+        width: 100%
+        margin-bottom: 175px
+    &-paragraph
+      font-size: 1.2rem
+    &__btn
+      margin-top: 80px
+
+@media ( max-width: 520px )
+  .bot
+    &__title
+      font-size: 2rem
+  
+  
+@media ( max-width: 425px )
+  .bot
+    &-inner
+      &__left
+        margin-bottom: 0
+    &__robot
+      display: none
+    &__btn
+      margin: 30px auto
+  
+
+  
+  
+  
+  
+

@@ -1,0 +1,155 @@
+.service
+  position: relative
+  padding-top: 120px
+  padding-bottom: 120px
+  &__title
+    margin: 0
+    margin-bottom: 40px
+    max-width: 400px
+    color: var(--text-primary)
+  &__desc
+    display: inline-block
+    font-size: 1.8rem
+    color: var(--text-primary)
+  &-inner
+    position: relative
+    z-index: 13
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__left
+      min-height: 254px
+      display: flex
+      align-items: center
+    &__right
+      width: 50%
+      display: flex
+      justify-content: center
+  &-item
+    position: relative
+    z-index: 15
+    max-width: 470px
+    padding: 30px
+    font-size: 1.8rem
+    border-radius: 5px
+    color: var(--text-primary)
+    box-shadow: 7px 12px 32px -6px rgba(183,185,186,1)
+    &__wrapper
+      display: flex
+      align-items: center
+      opacity: 0
+    &__num
+      position: relative
+      z-index: 14
+      +mont-bold
+      font-size: 10rem
+      color: #b9bbbc
+  &-icon
+    transform: scale(0)
+    &__img
+      width: 250px
+  &__btn
+    position: relative
+    z-index: 4
+
+.servcieItemFadeIn
+  animation: serviceItemFadeIn 0.9s ease 0s 1 normal forwards
+.serviceImgBubble
+  animation: serviceImgBubble 0.9s ease 0s 1 normal forwards
+
+@keyframes serviceItemFadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes serviceImgBubble
+  0%
+    transform: scale(0)
+  100%
+    transform: scale(1)
+
+
+@media ( max-width: 1400px )
+  .service
+    &__title
+      font-size: 4rem
+      margin-bottom: 30px
+
+@media ( max-width: 1200px )
+  .service
+    padding-top: 30px
+    padding-bottom: 30px
+    &-inner
+      &__left
+        min-height: 200px
+    &-item
+      max-width: 370px
+      font-size: 1.4rem
+      &__num
+        font-size: 7rem
+    &-icon
+      &__img
+        width: 200px
+
+@media ( max-width: 991px )
+  .service
+    &__desc
+      font-size: 1.6rem
+  
+
+@media ( max-width: 768px )
+  .service
+    &__title
+      font-size: 3rem
+    &__desc
+      margin-bottom: 30px
+      font-size: 1.4rem
+    &-inner
+      margin-bottom: 30px
+      &__left
+        width: 60%
+        min-height: 150px
+      &__right
+        width: 40%
+    &-item
+      max-width: 100%
+      padding: 20px
+      font-size: 1.4rem
+    &-icon
+      &__img
+        width: 150px
+
+@media ( max-width: 520px )
+  .service
+    &__title
+      font-size: 2rem
+    &__desc
+      margin-bottom: 0
+      font-size: 1.2rem
+    &-inner
+      flex-wrap: wrap
+      justify-content: center
+      &__left
+        width: 95%
+      &__right
+        min-height: 154px
+        width: 100%
+    &__btn
+      margin: 0 auto
+
+@media ( max-width: 425px )
+  .service
+    &-inner
+      &__left
+        width: 100%
+    &-item
+      font-size: 1.2rem
+      line-height: 20px
+
+  
+  
+  
+  
+
+    

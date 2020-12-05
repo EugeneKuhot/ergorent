@@ -1,0 +1,188 @@
+.conds
+  position: relative
+  background: #EFEFEF url(../img/cond-bg.png) no-repeat
+  background-size: cover
+  &__leaves
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 500px
+  .leaf[data-leaf-type=blur]
+    filter: blur(5px)
+  .leaf
+    position: absolute
+    z-index: 3
+    &-1
+      top: 20px
+      left: 1%
+    &-2
+      top: 40px
+      left: 14%
+    &-3
+      top: 200px
+      left: 9%
+    &-4
+      top: 150px
+      left: 14%
+    &-5
+      top: 10px
+      left: 19%
+    &-6
+      top: 150px
+      left: 34%
+    &-7
+      top: 180px
+      left: 27%
+    &-8
+      top: 300px
+      left: 42%
+    &-9
+      top: 370px
+      left: 28%
+  &__inner
+    display: flex
+    justify-content: flex-end
+  &-block
+    position: relative
+    z-index: 4
+  &__title
+    margin: 0
+    margin-bottom: 20px
+    max-width: 500px
+    color: var(--green)
+  &__desc
+    margin-bottom: 30px
+    max-width: 500px
+    display: block
+    font-size: 2.2rem
+    color: var(--text-primary)
+  &-count
+    margin-top: 60px
+    &__desc
+      margin-bottom: 35px
+      display: block
+      font-size: 1.6rem
+      color: var(--text-primary)
+  .count
+    display: inline-flex
+    &-item
+      margin-right: 20px
+      width: 120px
+      &:last-child
+        margin-right: 0
+      &__label
+        margin: 0 auto 20px
+        display: block
+        font-size: 2rem
+        font-weight: bold
+        text-align: center
+        text-transform: uppercase
+        color: var(--text-primary)
+      &__number
+        width: 120px
+        height: 120px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 7rem
+        +mont-bold
+        border-radius: 5px
+        background: radial-gradient(circle, rgba(20,31,42,1) 0%, rgba(6,16,25,1) 100%)
+        color: var(--secondary)
+        text-shadow: 3px 3px 9px rgba(0,0,0,0.73)
+        box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.61)
+
+@media ( max-width: 1400px )
+  .conds
+    background-position-x: -130px
+    &__leaves
+      width: 400px
+    &__title
+      font-size: 4rem
+    &__desc
+      font-size: 1.8rem
+    &-count
+      margin-top: 30px
+      &__desc
+        margin-bottom: 30px
+@media ( max-width: 1200px )
+  .conds
+    background-position-x: -220px
+    &__leaves
+      width: 320px
+    .leaf
+      display: none
+    .count
+      &-item
+        width: 100px
+        &__label
+          font-size: 1.8rem
+        &__number
+          width: 100px
+          height: 100px
+          font-size: 6rem
+      
+@media ( max-width: 991px )
+  .conds
+    background-image: none
+    background-color: #E6E6E6
+    &__leaves
+      display: none
+    &__inner
+      justify-content: flex-start
+    &-block
+      width: 100%
+    &__title
+      max-width: 100%
+      text-align: center
+    &__desc
+      margin: 0 auto 30px
+      max-width: 100%
+      text-align: center
+    &__btn
+      margin: 0 auto
+    &-count
+      margin-top: 55px
+      text-align: center
+
+@media ( max-width: 768px )
+  .conds
+    &__title
+      font-size: 3rem
+    &__desc
+      font-size: 1.6rem
+    .count
+      &-item
+        margin-right: 10px
+        width: 70px
+        &__label
+          font-size: 1.4rem
+        &__number
+          width: 70px
+          height: 70px
+          font-size: 4rem
+  
+@media ( max-width: 520px )
+  .conds
+    &__title
+      font-size: 2rem
+    &__desc
+      font-size: 1.2rem
+    &-count
+      margin-top: 30px
+      &__desc
+        font-size: 1.2rem
+  
+@media ( max-width: 425px )
+  .conds
+    .count
+      &-item
+        width: 50px
+        &__label
+          margin-bottom: 10px
+          font-size: 1.2rem
+        &__number
+          width: 50px
+          height: 50px
+          font-size: 2rem
+  

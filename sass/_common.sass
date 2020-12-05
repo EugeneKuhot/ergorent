@@ -1,0 +1,139 @@
+\:root
+  --primary: #1f2e40
+  --secondary: #ffffff
+  --text-primary: #141e2a
+  --green: #32a961
+  --red: #a93232
+  --gold: #d6bc7e
+  
+*
+  box-sizing: border-box
+  
+html
+  font-size: 10px
+
+body
+  width: 100%
+  margin: 0
+  position: relative
+  z-index: 1
+  font-size: 1.6rem
+  +mont-reg
+  overflow-x: hidden
+
+a
+  color: inherit
+  text-decoration: none
+
+input, textarea, button
+  &:focus
+    outline: none
+
+.container
+  margin: 0 auto
+  max-width: 1410px
+  padding-right: 120px
+  padding-left: 120px
+
+.section
+  padding-top: 60px
+  padding-bottom: 60px
+  &-title
+    +mont-bold
+    font-size: 5rem
+
+.swiper
+  &-container
+    width: 100%
+    height: 100%
+  &-slide
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.scroll
+  position: fixed
+  top: 50vh
+  right: 20px
+  transform: translateY(-50%)
+  height: 200px
+  z-index: 20
+  &__active-dot
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: -20px
+    border-radius: 50%
+    width: 10px
+    height: 10px
+    background-color: #6a7075
+    box-shadow: 0px 0px 19px 1px #6a7075
+  &__inner
+    display: flex
+    flex-direction: column
+  &__item
+    font-size: 2.2rem
+    color: #6a7075
+    mix-blend-mode: difference
+  &-btn
+    &-next, &-prev
+      width: 20px
+      height: 20px
+      background-color: #6a7075
+    &-next
+      position: absolute
+      top: -20px
+      left: 0
+    &-prev
+      position: absolute
+      bottom: -20px
+      left: 0
+
+.btn
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 210px
+  height: 50px
+  font-size: 1.6rem
+  text-align: center
+  border-radius: 5px
+  border: none
+  color: var(--secondary)
+  transition: all .3s ease
+  &_common
+    width: 216px
+    background-color: var(--primary)
+  &_green
+    background-color: var(--green)
+
+.btn:hover
+  transform: scale(1.05)
+  transition: all .3s ease
+
+@media ( max-width: 1400px )
+  .container
+    max-width: 1200px
+@media ( max-width: 1200px )
+  .container
+    padding-right: 10%
+    padding-left: 10%
+  .btn
+    &_common
+      width: 180px
+      height: 45px
+@media ( max-width: 991px )
+  .container
+    padding-right: 30px
+    padding-left: 30px
+  
+@media ( max-width: 768px )
+  .btn
+    &_common
+      width: 150px
+      height: 40px
+      font-size: 1.4rem
+  
+  
+  

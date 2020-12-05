@@ -1,0 +1,348 @@
+.packs
+  position: relative
+  background: radial-gradient(circle, rgba(20, 31, 42, 1) 0%, rgba(6, 16, 25, 1) 100%)
+
+  &__round1
+    position: absolute
+    top: 0px
+    left: 0px
+
+  &__round2
+    position: absolute
+    right: 0px
+    bottom: 0px
+
+  .container
+    position: relative
+    z-index: 5
+
+  &__title
+    margin: 0
+    margin-bottom: 70px
+    max-width: 500px
+    color: var(--secondary)
+
+  &-inner
+    display: flex
+    justify-content: space-around
+
+  &-card
+    border-radius: 25px
+    width: 280px
+    background-color: #fff
+    overflow: hidden
+
+    &-btn
+      transition: all .3s ease
+
+    &-btn:hover
+      transition: all .3s ease
+      transform: scale(1.05)
+
+    &-header
+      margin-bottom: 30px
+      padding: 30px 50px
+      height: 119px
+      position: relative
+
+      &__title
+        margin: 0
+        text-align: center
+        +mont-bold
+        font-size: 3rem
+        text-transform: uppercase
+        color: #fff
+
+    &-header::before
+      content: ''
+      display: block
+      width: 100%
+      height: 50%
+      background: linear-gradient(-190deg, transparent 50%, #fff 50%)
+      position: absolute
+      bottom: -1px
+      right: 0
+
+    ._basic
+      background: linear-gradient(45deg, #262626, #4d4d4d, #262626, #4d4d4d)
+
+    ._standart
+      background: linear-gradient(45deg, #23512e, #4da25e, #23512e, #4da25e)
+
+    ._buisness
+      background: linear-gradient(45deg, #511818, #a33030, #511818, #a33030)
+
+    ._vip
+      background: linear-gradient(45deg, #665a3c, #cdb379, #665a3c, #cdb379)
+
+    &-body
+      min-height: 220px
+      padding-bottom: 20px
+      border-bottom: 1px solid #d5d4d4
+
+    &-list
+      margin: 0
+      padding: 0
+      padding-left: 20px
+      list-style: none
+      font-size: 1.6rem
+      color: var(--text-primary)
+
+      li
+        margin-bottom: 10px
+
+    &-footer
+      margin-top: 50px
+      padding: 0px 15px 15px 15px
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+      &__price
+        font-size: 2.6rem
+        font-weight: bold
+        color: var(--text-primary)
+
+        span
+          font-size: 3.5rem
+
+      ._free
+        width: 100%
+        text-transform: uppercase
+        font-size: 1.6rem
+        letter-spacing: 2px
+        background-color: #505050
+        color: #fff
+
+      ._forsale
+        padding: 15px
+        width: 150px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        font-size: 1.6rem
+        font-weight: bold
+        color: #fff
+
+      ._green
+        background: var(--green) url(../img/basket.png) no-repeat
+        background-position: 20px 50%
+
+      ._red
+        background: var(--red) url(../img/basket.png) no-repeat
+        background-position: 20px 50%
+
+      ._gold
+        background: var(--gold) url(../img/basket.png) no-repeat
+        background-position: 20px 50%
+
+    &-btn
+      border: none
+      border-radius: 10px
+      height: 45px
+      cursor: pointer
+
+  &-desc
+    margin-top: 50px
+
+    &-item
+      margin: 0
+      margin-bottom: 5px
+      font-size: 1.4rem
+      color: var(--secondary)
+
+@media (max-width: 1400px)
+  .packs
+    .container
+      padding-left: 30px
+      padding-right: 30px
+
+    &__round1, &__round2
+      width: 400px
+
+    &__title
+      font-size: 4rem
+
+    &-inner
+      justify-content: center
+
+    &-card
+      &__wrapper
+        margin-right: 10px
+
+        &:last-child
+          margin-right: 0
+      width: 220px
+      overflow: hidden
+
+      &-header
+        height: 100px
+        padding: 20px 0px 0px 0px
+
+        &__title
+          font-size: 2.5rem
+
+      &-list
+        padding-left: 10px
+        font-size: 1.4rem
+
+      &-footer
+
+        ._green, ._red, ._gold
+          background-position-x: 10px
+          background-size: 20px
+
+        &__price
+          font-size: 2rem
+
+          span
+            font-size: 2rem
+
+@media (max-width: 991px)
+  .packs
+    &__title
+      max-width: 100%
+
+    &-inner
+      flex-wrap: wrap
+      justify-content: center
+
+    &-card
+      margin: 0 auto
+      width: 100%
+
+      &__wrapper
+        margin-bottom: 30px
+        width: 291px
+
+        &:nth-child(2n+1)
+          margin-right: 20px
+
+        &:nth-child(2n)
+          margin-right: 0px
+
+      &-header
+        height: 119px
+
+@media (max-width: 768px)
+  .packs
+    &__round1, &__round2
+      display: none
+
+    &__title
+      margin-bottom: 30px
+      font-size: 3rem
+
+    &-inner
+      justify-content: space-between
+
+    &-card
+      border-radius: 35px
+
+      &__wrapper
+        width: 47%
+
+      ._basic, ._standart, ._buisness, ._vip
+        background-size: 150%
+
+      &-header
+        padding-top: 0
+        height: 80px
+        display: flex
+        align-items: center
+        justify-content: center
+
+        &__title
+          font-size: 2.2rem
+
+      &-header::before
+        display: none
+
+@media (max-width: 520px)
+  .packs
+    &__title
+      font-size: 2rem
+
+    &-card
+      border-bottom-left-radius: 15px
+      border-bottom-right-radius: 15px
+
+      &-header
+        height: 60px
+
+        &__title
+          font-size: 1.8rem
+
+      &-body
+        min-height: 190px
+
+      &-list
+        font-size: 1.2rem
+
+      &-footer
+        margin-top: 0
+        padding: 10px
+        min-height: 90px
+        flex-wrap: wrap
+
+        &_free
+          display: flex
+          align-items: flex-end
+
+        &__price
+          margin-bottom: 10px
+          display: block
+          width: 100%
+          text-align: center
+
+        ._green, ._red, ._gold
+          width: 100%
+          background-image: none
+          justify-content: center
+
+      &-btn
+        height: 35px
+
+      ._free
+        font-size: 1.4rem
+        letter-spacing: 1px
+
+    &-desc
+      margin-top: 10px
+
+      &-item
+        font-size: 1.2rem
+
+@media (max-width: 425px)
+  .packs
+    &-inner
+      justify-content: center
+
+    &-card
+      max-width: 290px
+
+      &__wrapper
+        width: 100%
+
+        &:nth-child(2n+1)
+          margin-right: 0
+
+      &-header
+        height: 45px
+
+        &__title
+          font-size: 1.6rem
+
+      &-body
+        min-height: 170px
+
+      &-list
+        font-size: 1.3rem
+
+      ._free, ._forsale
+        font-size: 1.2rem
+  
+  
+  
+  
+

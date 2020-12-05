@@ -1,0 +1,173 @@
+.fb
+  &_container
+    padding-right: 30px
+    padding-left: 30px
+  &-inner
+    display: flex
+    justify-content: space-between
+    &__right, &__left
+      width: 47%
+    &__middle
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+    &__right
+      display: flex
+      justify-content: flex-end
+    &__divider
+      width: 1px
+      background-color: #949393
+      height: 40%
+    &__or
+      font-size: 2.2rem
+      color: #949393
+  &__title
+    margin: 80px 0 60px 0
+    color: var(--text-primary)
+  &-tg
+    max-width: 475px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__text
+      max-width: 174px
+      font-size: 2rem
+      color: var(--text-primary)
+    &-link
+      width: 215px
+      height: 50px
+      display: flex
+      align-items: center
+      justify-content: space-around
+      border-radius: 5px
+      background-color: #009ce8
+      transition: all .3s ease
+
+      &__text
+        font-size: 2rem
+        letter-spacing: 3px
+        color: #ffffff
+
+    &-link:hover
+      transition: all .3s ease
+      transform: scale(1.05)
+
+  &-form
+    width: 80%
+    &__input, &__textarea
+      margin-bottom: 17px
+      border: 1px solid #a8acb1
+      border-radius: 5px
+      width: 100%
+      padding: 20px
+      font-size: 2rem
+      color: var(--text-primary)
+      font-family: 'Montserrat Regular, Calibri, sans-serif'
+    &__input
+      height: 50px
+    &__textarea
+      height: 260px
+      resize: none
+    &__btn
+      background-color: var(--green)
+      color: var(--secondary)
+      cursor: pointer
+      font-family: 'Montserrat Regular, Calibri, sans-serif'
+
+@media ( max-width: 1400px )
+  .fb
+    &__title
+      font-size: 4rem
+    &-tg
+      &__text
+        font-size: 1.8rem
+      &-link
+        &__text
+          font-size: 1.8rem
+    &-form
+      &__input, &__textarea
+        font-size: 1.6rem
+
+@media ( max-width: 1200px )
+  .fb
+    &-tg
+      justify-content: flex-start
+      &-link
+        width: 190px
+        &__text
+          font-size: 1.6rem
+
+@media ( max-width: 991px )
+  .fb
+    &__title
+      margin: 0 auto 30px
+      text-align: center
+    &-inner
+      flex-direction: column
+      &__right, &__left
+        width: 100%
+      &__left
+        margin-bottom: 30px
+      &__right
+        justify-content: center
+      &__middle
+        margin-bottom: 30px
+        flex-direction: row
+      &__divider
+        width: 45%
+        height: 1px
+    &-tg
+      margin: 0 auto
+      flex-direction: column
+      &__text
+        margin-bottom: 30px
+        max-width: 100%
+    &-form
+      &__btn
+        width: 100%
+
+@media ( max-width: 768px )
+  .fb
+    &__title
+      font-size: 3rem
+    &-inner
+      &__or
+        font-size: 1.8rem
+    &-tg
+      &__text
+        font-size: 1.6rem
+
+@media ( max-width: 520px )
+  .fb
+    &__title
+      font-size: 2rem
+    &-inner
+      &__divider
+        width: 40%
+    &-tg
+      &__text
+        font-size: 1.4rem
+      &-link
+        width: 160px
+        height: 40px
+        &__img
+          width: 36px
+        &__text
+          font-size: 1.4rem
+          letter-spacing: 1px
+    &-form
+      width: 100%
+      &__input, &__textarea
+        font-size: 1.4rem
+
+
+  
+  
+
+  
+  
+  
+
+      
+        

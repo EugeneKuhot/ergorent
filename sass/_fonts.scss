@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Montserrat Regular, Calibri, sans-serif';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+  url('../fonts/Montserrat-Regular.woff') format('woff'),
+  url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+  url('../fonts/Montserrat-Regular.eot');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin mont-reg() {
+  font-family: 'Montserrat Regular, Calibri, sans-serif';
+}
+
+@font-face {
+  font-family: 'Acrom Light, Calibri, sans-serif';
+  src: url('../fonts/Acrom-Light.eot');
+  src: url('../fonts/Acrom-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Acrom-Light.woff') format('woff'),
+  url('../fonts/Acrom-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin acrom-light() {
+  font-family: 'Acrom Light, Calibri, sans-serif';
+}
+
+@font-face {
+  font-family: 'Acrom Extra Bold, Calibri, sans-serif';
+  src: url('../fonts/Acrom-ExtraBold.eot');
+  src: url('../fonts/Acrom-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Acrom-ExtraBold.woff') format('woff'),
+  url('../fonts/Acrom-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin acrom-extrabold() {
+  font-family: 'Acrom Extra Bold, Calibri, sans-serif';
+}
+
+@font-face {
+  font-family: 'Montserrat Bold, Calibri, sans-serif';
+  src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+  url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-ExtraBold.eot'),
+  url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin mont-bold() {
+  font-family: 'Montserrat Bold, Calibri, sans-serif';
+}
+
+@font-face {
+  font-family: 'Uni Sans Light, Calibri, sans-serif';
+  src: url('../fonts/UniSansLight.eot');
+  src: url('../fonts/UniSansLight.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/UniSansLight.woff') format('woff'),
+  url('../fonts/UniSansLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin uni-sans() {
+  font-family: 'Uni Sans Light, Calibri, sans-serif';
+}
