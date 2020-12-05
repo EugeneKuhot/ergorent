@@ -1074,7 +1074,7 @@ input:focus, textarea:focus, button:focus {
 
 .conds {
   position: relative;
-  background: #EFEFEF url(../img/cond-bg.png) no-repeat;
+  background: #ebebeb url(../img/cond-bg.png) no-repeat;
   background-size: cover; }
   .conds__leaves {
     position: absolute;
