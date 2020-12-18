@@ -194,16 +194,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if(screen.width > 1200) {
     let parralaxCoordX, parralaxCoordY, blurValue;
-    condsBlock.addEventListener("mousemove", function(e) {
+    document.addEventListener("mousemove", function(e) {
       parralaxCoordX = (e.clientX) / 80;
       parralaxCoordY = (e.clientY) / 80;
-      blurValue = (e.clientX - e.clientY) / 100;
+      blurValue = (e.clientX + e.clientY) / 500;
       condsLeaves.forEach(function(elem, i) {
         if (elem.dataset.leafType == 'clear') {
           elem.style.filter = "blur(" +  (blurValue.toFixed()) + "px)";
         }
         if (elem.dataset.leafType == 'blur') {
-          elem.style.filter = "blur(" +  (10 - blurValue.toFixed()) + "px)";
+          elem.style.filter = "blur(" +  (blurValue.toFixed()) + "px)";
         }
       });
       if (screen.width > 1400) {
